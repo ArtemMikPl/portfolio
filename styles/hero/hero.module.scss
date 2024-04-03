@@ -1,0 +1,107 @@
+.hero{
+  position: relative;
+  height: 800px;
+  padding-top: 132px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media all and (max-width: 800px) {
+    padding-top: 103px;
+  }
+
+  &__title{
+    margin-bottom: 98px;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 101px;
+    color: #06CAF8;
+    --hue: 0;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: hsl(var(--hue), 50%, 95%);
+    text-shadow:
+            0 0 15px hsl(var(--hue), 60%, 90%, .80),
+            0 0 20px hsl(var(--hue), 70%, 80%, .85),
+            0 0 40px hsl(var(--hue), 80%, 70%, .90),
+            0 0 60px hsl(var(--hue), 90%, 60%, .95),
+            0 0 80px hsl(var(--hue), 100%, 50%, 1);
+    @media all and (max-width: 1440px) {
+      margin-bottom: 113px;
+    }
+    @media all and (max-width: 1080px) {
+      font-size: 72px;
+      margin-bottom: 92px;
+    }
+    @media all and (max-width: 800px) {
+      font-size: 52px;
+      margin-bottom: 60px;
+    }
+  }
+
+  &__description{
+    max-width: 485px;
+    line-height: 30px;
+    font-family: Lato;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+    color: #F3F3F3;
+    margin-bottom: 120px;
+
+    @media all and (max-width: 1440px) {
+      margin-bottom: 111px;
+    }
+    @media all and (max-width: 1080px) {
+      max-width: 386px;
+      margin-bottom: 92px;
+    }
+    @media all and (max-width: 800px) {
+      font-size: 18px;
+      margin-bottom: 56.5px;
+    }
+  }
+
+  &__btn{
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: left;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    padding: 24px 48px;
+    gap: 8px;
+    border-radius: 6px;
+    background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #00C9FC 0%, #1A46EF 56.36%);
+
+    &:hover{
+      background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+    }
+
+    @media all and (max-width: 1440px) {
+      padding: 18px 40px;
+    }
+    @media all and (max-width: 800px) {
+      font-size: 18px;
+      padding: 12px 32px;
+    }
+  }
+  
+  &__arrow{
+    position: absolute;
+    bottom: 32px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 75px;
+    height: 66px;
+    cursor: pointer;
+    background-image: url('../../public/img/hero-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @media all and (max-width: 1080px) {
+      bottom: 64px;
+    }
+  }
+}
