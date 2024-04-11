@@ -1,0 +1,31 @@
+.title{
+  margin: 0 0 50px 0;
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba(6, 202, 249, 1);
+
+  @media all and (max-width: 1080px) {
+    margin: 0 32px;
+    font-size: 36px;
+  }
+
+  @media all and (max-width: 800px) {
+    margin: 0;
+    font-size: 24px;
+  }
+  @media all and (max-width: 400px) {
+
+  }
+
+  &__border{
+    display: block;
+    height: 3px;
+    background: linear-gradient(89.99deg, #00D1FF 0%, rgba(255, 34, 141, 0) 100%);
+    margin-top: 15px;
+
+    @media all and (max-width: 800px) {
+      margin-top: 10px;
+    }
+  }
+}

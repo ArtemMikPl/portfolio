@@ -8,6 +8,11 @@
 
   @media all and (max-width: 800px) {
     padding-top: 103px;
+    margin-bottom: 230px;
+  }
+  @media all and (max-width: 400px) {
+    height: 450px;
+    margin-bottom: 25px;
   }
 
   &__title{
@@ -37,6 +42,11 @@
       font-size: 52px;
       margin-bottom: 60px;
     }
+    @media all and (max-width: 400px) {
+      margin-bottom: 48px;
+      font-size: 42px;
+      line-height: 53px;
+    }
   }
 
   &__description{
@@ -54,11 +64,15 @@
     }
     @media all and (max-width: 1080px) {
       max-width: 386px;
-      margin-bottom: 92px;
+      margin-bottom: 62px;
     }
     @media all and (max-width: 800px) {
       font-size: 18px;
       margin-bottom: 56.5px;
+    }
+    @media all and (max-width: 400px) {
+      line-height: 22.4px;
+      margin-bottom: 43px;
     }
   }
 
