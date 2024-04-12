@@ -8,7 +8,7 @@ const Skills = () => {
     const {skillsList} = useTalons()
 
     return (
-        <section className={styles.skills}>
+        <section id={'skills'} className={styles.skills}>
             <div className="container">
                 <MainTitle text={'Skills'}/>
             </div>

@@ -51,7 +51,7 @@ const Header = () => {
                         <li className={currentMenuItemClass}>
                             <Link
                                 href='/'
-                                to='about'
+                                to='skills'
                                 spy={true}
                                 smooth={true}
                                 offset={offset}
@@ -64,7 +64,7 @@ const Header = () => {
                         <li className={currentMenuItemClass}>
                             <Link
                                 href='/'
-                                to='about'
+                                to='portfolio'
                                 spy={true}
                                 smooth={true}
                                 offset={offset}
@@ -77,7 +77,7 @@ const Header = () => {
                         <li className={currentMenuItemClass}>
                             <Link
                                 href='/'
-                                to='about'
+                                to='contact'
                                 spy={true}
                                 smooth={true}
                                 offset={offset}

@@ -1,4 +1,16 @@
 .skills{
+  padding-bottom: 136px;
+
+  @media all and (max-width: 1440px) {
+    padding-bottom: 140.5px;
+  }
+  @media all and (max-width: 1080px) {
+    padding-bottom: 120px;
+  }
+  @media all and (max-width: 800px) {
+    padding-bottom: 94.5px;
+  }
+
 
   &__sub_container{
     margin-top: 105px;
@@ -7,6 +19,10 @@
     grid-column-gap: 32px;
     grid-row-gap: 128.5px;
 
+    @media all and (max-width: 1440px) {
+      margin-top: 105px;
+      grid-row-gap: 132px;
+    }
     @media all and (max-width: 1080px) {
       margin-top: 93px;
       grid-row-gap: 112px;
