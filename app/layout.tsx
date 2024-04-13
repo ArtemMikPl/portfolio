@@ -3,6 +3,7 @@ import {Inter} from "next/font/google";
 import "../styles/globals.css";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css'
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({subsets: ["latin"]});
 
@@ -23,6 +24,7 @@ export default function RootLayout({
         <>
             <html suppressHydrationWarning={true} lang="en">
                 <body className={inter.className}>
+                <NextTopLoader />
                 <ToastContainer
                     position={'bottom-right'}
                     hideProgressBar={false}
