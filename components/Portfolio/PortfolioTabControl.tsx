@@ -1,4 +1,4 @@
-'use client'
+
 import React from 'react';
 import styles from '../../styles/portfolio/portfolio.module.scss'
 import ArrowSvg from "@/components/api/ArrowSvg";

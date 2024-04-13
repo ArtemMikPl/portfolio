@@ -1,4 +1,4 @@
-'use client'
+
 import React, {MutableRefObject} from 'react';
 import emailjs from '@emailjs/browser'
 import ContactInput from "@/components/Contact/ContactInput";

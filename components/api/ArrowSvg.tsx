@@ -1,6 +1,5 @@
-'use client'
+
 import React from 'react';
-import styles from '../../styles/api/arrowSvg.module.scss'
 import {useMediaQuery} from "@/hooks";
 
 const ArrowSvg = () => {
