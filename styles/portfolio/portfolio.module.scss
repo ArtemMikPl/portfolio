@@ -1,4 +1,15 @@
 .portfolio{
+  margin-bottom: 170px;
+
+  @media all and (max-width: 1080px) {
+    margin-bottom: 140px;
+  }
+  @media all and (max-width: 800px) {
+    margin-bottom: 100px;
+  }
+  @media all and (max-width: 445px) {
+    margin-bottom: 60px;
+  }
 
   .sub_container{
     margin-top: 105px;

@@ -39,11 +39,11 @@ export default () => {
         {id: 6, img: '/img/portfolio/port2.png', link: '#', title: 'Музыкальный сервис «Драйв»'},
     ]
     const hiddenPortfolioItemsArray = [
-            {id: 7, img: '/img/portfolio/port1.png', link: '#', title: 'Игровой сайт «Старк»'},
-            {id: 8, img: '/img/portfolio/port1.png', link: '#', title: 'Интернет магазин «Цифровой»'},
-            {id: 9, img: '/img/portfolio/port1.png', link: '#', title: 'Обучающая платформа «Бризли»'},
-            {id: 10, img: '/img/portfolio/port1.png', link: '#', title: 'Сайт грузоперевозок «Сервис»'},
-        ]
+        {id: 7, img: '/img/portfolio/port1.png', link: '#', title: 'Игровой сайт «Старк»'},
+        {id: 8, img: '/img/portfolio/port1.png', link: '#', title: 'Интернет магазин «Цифровой»'},
+        {id: 9, img: '/img/portfolio/port1.png', link: '#', title: 'Обучающая платформа «Бризли»'},
+        {id: 10, img: '/img/portfolio/port1.png', link: '#', title: 'Сайт грузоперевозок «Сервис»'},
+    ]
 
 
     return{

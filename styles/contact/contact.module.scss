@@ -1,0 +1,307 @@
+.contact{
+
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+    margin-top: 125px;
+
+    @media all and (max-width: 1080px) {
+      margin-top: 90px;
+    }
+    @media all and (max-width: 800px) {
+      margin-top: 70px;
+    }
+    @media all and (max-width: 600px) {
+      grid-template-columns: 1fr;
+      margin-top: 50px;
+    }
+    @media all and (max-width: 445px) {
+      margin-top: 30px;
+    }
+  }
+
+  &__left{
+    max-width: 555px;
+  }
+
+  &__description{
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #f2f2f2;
+
+    @media all and (max-width: 800px) {
+      font-size: 18px;
+    }
+
+    &:nth-child(2){
+      margin-bottom: 88px;
+
+      @media all and (max-width: 600px) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__title{
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+    display: inline-block;
+    vertical-align: top;
+
+    &__text{
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 24px;
+      color: #fff;
+
+      @media all and (max-width: 800px) {
+        font-size: 18px;
+      }
+    }
+
+    &__arrow{
+      position: absolute;
+      top: 16px;
+      left: -20px;
+
+      @media all and (max-width: 800px) {
+        top: 18px;
+        left: -15px;
+      }
+    }
+
+    &__border{
+      height: 2px;
+      display: block;
+      background: linear-gradient(89.99deg, #00d1ff 0%, rgb(241, 16, 171) 50%, rgb(0,0,0,0) 100%);
+      margin-top: 16px;
+      width: 100%;
+    }
+  }
+
+  &__list{
+    margin-top: 70px;
+    list-style: none;
+
+    @media all and (max-width: 600px) {
+      margin-top: 40px;
+      margin-bottom: 50px;
+    }
+
+    &__item{
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+
+      &:not(:last-child)  &__img{
+        margin-left: -1.8px;
+      }
+
+      &__title{
+        font-family: Lato;
+        font-size: 20px;
+        font-weight: 600;
+        margin-right: 24px;
+        transition: 0.3s;
+
+        @media all and (max-width: 800px) {
+          font-size: 18px;
+        }
+
+        &:hover{
+          background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      &__imgBlock{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+
+      }
+    }
+  }
+
+  &__form{
+    display: flex;
+    flex-direction: column;
+
+    &__label{
+      display: block;
+      margin-bottom: 34px;
+
+      @media all and (max-width: 500px) {
+        margin-bottom: 24px;
+      }
+
+      &:nth-child(4){
+        margin-bottom: 51px;
+
+        @media all and (max-width: 500px) {
+          margin-bottom: 32px;
+        }
+      }
+
+      &__text{
+        display: block;
+        margin-bottom: 8px;
+        font-family: "Lato", sans-serif;
+        font-weight: 600;
+        font-size: 20px;
+        color: #f2f2f2;
+
+        @media all and (max-width: 800px) {
+          font-size: 18px;
+        }
+      }
+
+      &__input{
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        border: 2px solid rgba(255, 255, 255, 0.15);
+        border-radius: 4px;
+        padding-top: 6px;
+        padding-left: 22px;
+        width: 100%;
+        height: 76px;
+        background-color: transparent;
+        font-size: 22px;
+
+        @media all and (max-width: 800px) {
+          font-size: 16px;
+          height: 52px;
+        }
+        @media all and (max-width: 500px) {
+          font-size: 14px;
+        }
+
+        &:focus-visible{
+          border-image-source: linear-gradient(to right, rgb(139,14,183), rgb(18,158,204));
+          border-radius: 4px;
+          border-image-slice: 1;
+          border-width: 2px;
+          outline: none;
+        }
+
+        &::placeholder{
+          font-family: "Lato", sans-serif;
+          font-weight: 400;
+          font-size: 22px;
+          color: #b7bfd1;
+
+          @media all and (max-width: 800px) {
+            font-size: 16px;
+          }
+          @media all and (max-width: 500px) {
+            font-size: 14px;
+          }
+        }
+
+
+      }
+    }
+
+    &__button{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      border: none;
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      color: #f2f2f2;
+      border-radius: 4px;
+      padding: 16px 48px;
+      width: 100%;
+      height: 52px;
+      transition: .2s ease-in-out;
+      background: radial-gradient(2287.44% 169.84% at 100% -31.65%, rgb(0, 201, 252) 0%, rgb(26, 70, 239) 56.358736753463745%);
+
+      &:hover{
+        transition: .2s ease-in-out;
+        background: radial-gradient(2287.44% 169.84% at 100% -31.65%, rgb(8, 166, 206) 0%, rgb(99, 82, 177) 43.75%, rgb(139, 14, 183) 68.75%);
+      }
+
+      &:disabled{
+        cursor: auto;
+        opacity: 0.5;
+        background: radial-gradient(2287.44% 169.84% at 100% -31.65%, rgb(0, 201, 252) 0%, rgb(26, 70, 239) 56.358736753463745%);
+      }
+    }
+  }
+
+  &__checkbox{
+    margin-bottom: 100px;
+    margin-top: 43px;
+    display: grid;
+    grid-template-columns: 0.08fr 1fr;
+
+    @media all and (max-width: 1080px) {
+      grid-template-columns: 0.13fr 1fr;
+    }
+
+    @media all and (max-width: 500px) {
+      margin-top: 23px;
+    }
+    @media all and (max-width: 380px) {
+      grid-template-columns: 0.16fr 1fr;
+    }
+
+    &__input{
+      cursor: pointer;
+      appearance: none;
+      border: 2px solid #0caed4;
+      border-radius: 4px;
+      width: 28px;
+      height: 28px;
+      vertical-align: text-bottom;
+      position: relative;
+
+      &::before{
+        content: "";
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        top: 0;
+      }
+
+      &:checked::before{
+        border-right: 5px solid #4b83fc;
+        border-bottom: 5px solid #4b83fc;
+        height: 70%;
+        width: 30%;
+        transform: rotate(40deg) translateY(-10%) translateX(0%);
+      }
+
+    }
+
+    &__text{
+      line-height: 21px;
+      font-family: "Lato", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: #b7bfd1;
+
+      &__link{
+        color: #0caed4;
+        text-decoration: none;
+      }
+    }
+
+  }
+}

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import {useMediaQuery} from "../../hooks";
+import {useMediaQuery} from "@/hooks";
 import Logo from "../Logo/Logo";
 import { Link } from 'react-scroll';
 import styles from '../../styles/header/header.module.scss';
@@ -44,6 +44,7 @@ const Header = () => {
                                 offset={offset}
                                 duration={duration}
                                 className={styles.header__nav__list__item__link}
+                                onClick={closeMenu}
                             >
                                 About me
                             </Link>
@@ -57,6 +58,7 @@ const Header = () => {
                                 offset={offset}
                                 duration={duration}
                                 className={styles.header__nav__list__item__link}
+                                onClick={closeMenu}
                             >
                                 Skills
                             </Link>
@@ -70,6 +72,7 @@ const Header = () => {
                                 offset={offset}
                                 duration={duration}
                                 className={styles.header__nav__list__item__link}
+                                onClick={closeMenu}
                             >
                                 Portfolio
                             </Link>
@@ -83,6 +86,7 @@ const Header = () => {
                                 offset={offset}
                                 duration={duration}
                                 className={styles.header__nav__list__item__link}
+                                onClick={closeMenu}
                             >
                                 Contact
                             </Link>
