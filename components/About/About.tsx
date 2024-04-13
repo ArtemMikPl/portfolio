@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react';
 import styles from '../../styles/about/about.module.scss'
 import MainTitle from "@/components/api/MainTitle";

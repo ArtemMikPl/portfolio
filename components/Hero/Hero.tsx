@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react';
 import {useMediaQuery} from "@/hooks";
 import {Link} from "react-scroll";

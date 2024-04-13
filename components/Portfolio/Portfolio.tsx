@@ -1,4 +1,4 @@
-
+'use client'
 import React from 'react';
 import MainTitle from "@/components/api/MainTitle";
 import PortfolioTabControl from "@/components/Portfolio/PortfolioTabControl";
