@@ -18,7 +18,7 @@ const Contact = () => {
                         <p className={styles.contact__description}>Are you working on something great? I will be happy to help you with this! Write me an email and we will start the project right now!</p>
                         <p className={styles.contact__description}>Just do it)</p>
                         <div className={styles.contact__title}>
-                            <span className={styles.contact__title__text}>I'm on social networks:</span>
+                            <span className={styles.contact__title__text}>I&apos;m on social networks:</span>
                             <span className={styles.contact__title__arrow}><ArrowSvg/></span>
                             <span className={styles.contact__title__border}></span>
                         </div>
