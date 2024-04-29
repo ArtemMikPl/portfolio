@@ -17,7 +17,7 @@ const About = () => {
                 <MainTitle text={'about me'}/>
             </div>
             <div className={`sub-container ${styles.about__sub_container}`}>
-                    <img className={styles.about__img} src="/img/about.png" alt="About"/>
+                    <img className={styles.about__img} src="/img/ya.jpg" alt="About"/>
                 <div className={styles.about__inner}>
                     <h3 className={styles.about__title}>
                         Artem Mykolaichuk
@@ -28,22 +28,52 @@ const About = () => {
                             <span className={styles.about__title__border__line}/>
                         </span>
                     </h3>
-                    <p className={styles.about__description}>Located in Hartford, Connecticut.
-                        I currently work part-time as a Remote Junior Web Developer for Color based in Las Vegas. I&apos;m looking to take on more work and improve my skills as a web developer.
+                    <p className={styles.about__description}>
+                        I was born in Ukraine, now I live in Poland, Krakow. Currently I work as a freelancer.
+                        <br/>Actively searching for a stable job.
                     </p>
                     {!isMobile1080 || isMobile600 ? <ul className={styles.about__list}>
-                        <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>Facebook</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/fb.svg" alt="facebook"/></span></li>
-                        <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>VK</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/vk.svg" alt="vk"/></span></li>
-                        <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>YouTube</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/yt.svg" alt="youtube"/></span></li>
+                        <a target={'_blank'} href={'https://www.facebook.com/profile.php?id=100016067163801'} className={styles.about__list__item}>
+                                <span className={styles.about__list__item__title}>Facebook</span>
+                                <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_fb}`}>
+                                <img className={styles.about__list__item__img} src="/img/fb.svg" alt="facebook"/>
+                            </span>
+                        </a>
+                        <a target={'_blank'} href={'https://t.me/zxcfvhnjm'} className={styles.about__list__item}>
+                                <span className={styles.about__list__item__title}>Telegram</span>
+                                <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_tg}`}>
+                                    <img className={styles.about__list__item__img} src="/img/tg.svg" alt="vk"/>
+                                </span>
+                        </a>
+                        <a target={'_blank'} href={'https://www.youtube.com/channel/UCI6gznkVR6lb2oRxbpHsG3g'} className={styles.about__list__item}>
+                                <span className={styles.about__list__item__title}>YouTube</span>
+                                <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_yt}`}>
+                                <img className={styles.about__list__item__img} src="/img/yt.svg" alt="youtube"/>
+                            </span>
+                        </a>
                     </ul> : ''}
                 </div>
             </div>
             <div className="sub-container">
                 {isMobile1080 && !isMobile600 && <ul className={styles.about__list}>
-                    <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>Facebook</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/fb.svg" alt="facebook"/></span></li>
-                    <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>VK</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/vk.svg" alt="vk"/></span></li>
-                    <li className={styles.about__list__item}><Link href={'#'} className={styles.about__list__item__title}>YouTube</Link><span className={styles.about__list__item__imgBlock}><img className={styles.about__list__item__img} src="/img/yt.svg" alt="youtube"/></span></li>
-
+                    <a target={'_blank'} href={'https://www.facebook.com/profile.php?id=100016067163801'} className={styles.about__list__item}>
+                        <span className={styles.about__list__item__title}>Facebook</span>
+                        <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_fb}`}>
+                                <img className={styles.about__list__item__img} src="/img/fb.svg" alt="facebook"/>
+                            </span>
+                    </a>
+                    <a target={'_blank'} href={'https://t.me/zxcfvhnjm'} className={styles.about__list__item}>
+                        <span className={styles.about__list__item__title}>Telegram</span>
+                        <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_tg}`}>
+                                    <img className={styles.about__list__item__img} src="/img/tg.svg" alt="vk"/>
+                                </span>
+                    </a>
+                    <a target={'_blank'} href={'https://www.youtube.com/channel/UCI6gznkVR6lb2oRxbpHsG3g'} className={styles.about__list__item}>
+                        <span className={styles.about__list__item__title}>YouTube</span>
+                        <span className={`${styles.about__list__item__imgBlock} ${styles.about__list__item__img_yt}`}>
+                                <img className={styles.about__list__item__img} src="/img/yt.svg" alt="youtube"/>
+                            </span>
+                    </a>
                 </ul> }
             </div>
         </section>

@@ -19,24 +19,24 @@ const Footer = () => {
                         <div className={styles.footer__share}>
                             <p className={styles.footer__share__title}>Share the site with your friends:</p>
                             <ul className={styles.footer__share__list}>
-                                <li className={styles.footer__share__list__item}>
-                                    <Link href={'#'} className={styles.footer__share__list__item__title}>Facebook</Link>
-                                    <span className={styles.footer__share__list__item__imgBlock}>
-                                        <img className={styles.footer__share__list__item__img} src="/img/fb.svg" alt="facebook"/>
-                                    </span>
-                                </li>
-                                <li className={styles.footer__share__list__item}>
-                                    <Link href={'#'} className={styles.footer__share__list__item__title}>VK</Link>
-                                    <span className={styles.footer__share__list__item__imgBlock}>
-                                        <img className={styles.footer__share__list__item__img} src="/img/vk.svg" alt="vk"/>
-                                    </span>
-                                </li>
-                                <li className={styles.footer__share__list__item}>
-                                    <Link href={'#'} className={styles.footer__share__list__item__title}>YouTube</Link>
-                                    <span className={styles.footer__share__list__item__imgBlock}>
-                                        <img className={styles.footer__share__list__item__img} src="/img/yt.svg" alt="youtube"/>
-                                    </span>
-                                </li>
+                                <a target={'_blank'} href={'https://www.facebook.com/profile.php?id=100016067163801'} className={styles.footer__share__list__item}>
+                                    <span className={styles.footer__share__list__item__title}>Facebook</span>
+                                    <span className={`${styles.footer__share__list__item__imgBlock} ${styles.footer__share__list__item__img_fb}`}>
+                                <img className={styles.footer__share__list__item__img} src="/img/fb.svg" alt="facebook"/>
+                            </span>
+                                </a>
+                                <a target={'_blank'} href={'https://t.me/zxcfvhnjm'} className={styles.footer__share__list__item}>
+                                    <span className={styles.footer__share__list__item__title}>Telegram</span>
+                                    <span className={`${styles.footer__share__list__item__imgBlock} ${styles.footer__share__list__item__img_tg}`}>
+                                    <img className={styles.footer__share__list__item__img} src="/img/tg.svg" alt="vk"/>
+                                </span>
+                                </a>
+                                <a target={'_blank'} href={'https://www.youtube.com/channel/UCI6gznkVR6lb2oRxbpHsG3g'} className={styles.footer__share__list__item}>
+                                    <span className={styles.footer__share__list__item__title}>YouTube</span>
+                                    <span className={`${styles.footer__share__list__item__imgBlock} ${styles.footer__share__list__item__img_yt}`}>
+                                <img className={styles.footer__share__list__item__img} src="/img/yt.svg" alt="youtube"/>
+                            </span>
+                                </a>
                             </ul>
                         </div>
                         <div className={styles.footer__pages}>

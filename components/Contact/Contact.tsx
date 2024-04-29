@@ -2,7 +2,6 @@
 import React from 'react';
 import styles from '../../styles/contact/contact.module.scss'
 import MainTitle from "@/components/api/MainTitle";
-import Link from "next/link";
 import ArrowSvg from "@/components/api/ArrowSvg";
 import ContactForm from "@/components/Contact/ContactForm";
 
@@ -23,9 +22,24 @@ const Contact = () => {
                             <span className={styles.contact__title__border}></span>
                         </div>
                         <ul className={styles.contact__list}>
-                            <li className={styles.contact__list__item}><Link href={'#'} className={styles.contact__list__item__title}>Facebook</Link><span className={styles.contact__list__item__imgBlock}><img className={styles.contact__list__item__img} src="/img/fb.svg" alt="facebook"/></span></li>
-                            <li className={styles.contact__list__item}><Link href={'#'} className={styles.contact__list__item__title}>VK</Link><span className={styles.contact__list__item__imgBlock}><img className={styles.contact__list__item__img} src="/img/vk.svg" alt="vk"/></span></li>
-                            <li className={styles.contact__list__item}><Link href={'#'} className={styles.contact__list__item__title}>YouTube</Link><span className={styles.contact__list__item__imgBlock}><img className={styles.contact__list__item__img} src="/img/yt.svg" alt="youtube"/></span></li>
+                            <a target={'_blank'} href={'https://www.facebook.com/profile.php?id=100016067163801'} className={styles.contact__list__item}>
+                                <span className={styles.contact__list__item__title}>Facebook</span>
+                                <span className={`${styles.contact__list__item__imgBlock} ${styles.contact__list__item__img_fb}`}>
+                                <img className={styles.contact__list__item__img} src="/img/fb.svg" alt="facebook"/>
+                            </span>
+                            </a>
+                            <a target={'_blank'} href={'https://t.me/zxcfvhnjm'} className={styles.contact__list__item}>
+                                <span className={styles.contact__list__item__title}>Telegram</span>
+                                <span className={`${styles.contact__list__item__imgBlock} ${styles.contact__list__item__img_tg}`}>
+                                    <img className={styles.contact__list__item__img} src="/img/tg.svg" alt="vk"/>
+                                </span>
+                            </a>
+                            <a target={'_blank'} href={'https://www.youtube.com/channel/UCI6gznkVR6lb2oRxbpHsG3g'} className={styles.contact__list__item}>
+                                <span className={styles.contact__list__item__title}>YouTube</span>
+                                <span className={`${styles.contact__list__item__imgBlock} ${styles.contact__list__item__img_yt}`}>
+                                <img className={styles.contact__list__item__img} src="/img/yt.svg" alt="youtube"/>
+                            </span>
+                            </a>
                         </ul>
                     </div>
                     <div className={styles.contact__right}>

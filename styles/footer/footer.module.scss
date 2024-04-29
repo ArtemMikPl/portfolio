@@ -58,6 +58,10 @@
 
   &__left{
 
+    @media all and (max-width: 800px) {
+      margin-right: 20px;
+    }
+
     @media all and (max-width: 600px) {
       order: 2;
       display: flex;
@@ -115,7 +119,7 @@
       @media all and (max-width: 600px) {
         flex-direction: row;
       }
-      @media all and (max-width: 445px) {
+      @media all and (max-width: 475px) {
         flex-direction: column;
       }
 
@@ -123,6 +127,34 @@
         display: flex;
         align-items: center;
         margin-right: 40px;
+        max-width: 150px;
+        text-decoration: none;
+
+        @media all and (max-width: 800px) {
+          margin-bottom: 10px;
+        }
+
+        @media all and (max-width: 475px) {
+          margin-bottom: 10px;
+        }
+
+        &:hover{
+          text-decoration: none;
+        }
+        &:hover > &__title{
+          background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        &:hover > &__img_fb{
+          background: #6682c1;
+        }
+        &:hover > &__img_tg{
+          background: #0B9EE7;
+        }
+        &:hover > &__img_yt{
+          background: #f40000;
+        }
 
         &__title{
           font-family: "Lato", sans-serif;
@@ -134,12 +166,6 @@
 
           @media all and (max-width: 1080px) {
             font-size: 16px;
-          }
-
-          &:hover{
-            background: radial-gradient(142.65% 2282.99% at 100% -31.65%, #08A6CE 0%, #6352B1 43.75%, #8B0EB7 68.75%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
           }
         }
 
